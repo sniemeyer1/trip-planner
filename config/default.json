@@ -1,3 +1,4 @@
 {
-  "mongoURI": "mongodb+srv://savannahniemeyer456:savannah456@tripplanner-0c0l7.mongodb.net/test?retryWrites=true&w=majority"
+  "mongoURI": "mongodb+srv://savannahniemeyer456:savannah456@tripplanner-0c0l7.mongodb.net/test?retryWrites=true&w=majority",
+  "jwtSecret": "mySecretToken"
 }
