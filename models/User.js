@@ -1,7 +1,10 @@
+//to interact with db, create models
+
 //bring in mongoose
 const mongoose = require('mongoose');
-//create schema, takes in object of all the necessary fields
-const UserSchema = new mongoose.Schema({
+
+//create schema
+const UserSchema = mongoose.Schema({
   name: {
     type: String,
     required: true,
@@ -9,7 +12,7 @@ const UserSchema = new mongoose.Schema({
   email: {
     type: String,
     required: true,
-    uniquie: true,
+    unique: true,
   },
   password: {
     type: String,
@@ -23,3 +26,6 @@ const UserSchema = new mongoose.Schema({
     default: Date.now,
   },
 });
+
+//exports variable, takes in model name and the schema
+module.exports = User = mongoose.model('user', UserSchema);
